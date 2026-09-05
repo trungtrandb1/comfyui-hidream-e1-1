@@ -1,6 +1,19 @@
 # hidream_e1_1
 ComfyUI workflow Dockerized via [comfyui-wizard](https://comfy.getrunpod.io).
 Submission: https://comfy.getrunpod.io/dashboard/submissions/kd78scwb6wbv0ktcvjgfwbx9wx8dvcgh
+## Pull the prebuilt image
+
+We've already built and published this image on Docker Hub:
+
+```bash
+docker pull runpod/comfyui-wizard:kd78scwb6wbv0ktcvjgfwbx9wx8dvcgh
+docker run --rm --gpus all -p 8188:8188 runpod/comfyui-wizard:kd78scwb6wbv0ktcvjgfwbx9wx8dvcgh
+```
+
+Then open http://localhost:8188.
+
+---
+
 ## Build it yourself
 ```bash
 docker build -t my-comfy-workflow .
